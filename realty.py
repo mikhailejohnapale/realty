@@ -39,7 +39,7 @@ def compute_penalty_rate(curr_date, prev_date):
     return penalty_rate
 
 
-def compute_sh_tax(assessed_value, type):
+def compute_sh_tax(assessed_value, type, SH_RATE):
     if type == 'LOT' and assessed_value > 50000:
         sh = assessed_value * SH_RATE
     else:
